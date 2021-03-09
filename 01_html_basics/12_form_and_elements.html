@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Bootcamp - Form and its elements</title>
+</head>
+<body>
+  <h1>Form and its elements</h1>
+
+  <h2>Login</h2>
+  <form action="/login" method="post">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username">
+    <br><br>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password">
+    <br><br>
+    <input type="reset">
+    <input type="submit">
+  </form>
+
+  <h2>Radio and checkbox</h2>
+  <form action="#">
+    <input type="radio" id="clang" name="language" value="c">
+    <label for="clang">C language</label>
+    <input type="radio" id="javascript" name="language" value="javascript">
+    <label for="javascript">JavaScript language</label>
+
+    <h3>Courses</h3>
+    <input type="checkbox" id="web" name="web" value="web">
+    <label for="web">Web Fundamentals</label>
+    <input type="checkbox" id="programming" name="programming" value="programming">
+    <label for="programming">Programming</label>
+  </form>
+
+  <h2>Select</h2>
+  <form action="#">
+    <label for="language">Select language:</label>
+    <select name="language" id="language" size="3" multiple>
+      <option value="c">C language</option>
+      <option value="javascript" selected>JavaScript language</option>
+      <option value="ruby">Ruby language</option>
+      <option value="python">Python language</option>
+      <option value="java">Java language</option>
+    </select>
+  </form>
+
+  <h2>Textarea</h2>
+  <label for="message">Enter message:</label><br>
+  <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+  <h2>Other input types</h2>
+  <form action="#">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <br>
+    <label for="upload">Upload profile image:</label>
+    <input type="file" id="upload" name="profile">
+    <br>
+    <label for="color">Choose favorite color:</label>
+    <input type="color" id="color" name="color">
+    <br>
+    <label for="date">Your birth date:</label>
+    <input type="date" id="date" name="date">
+
+    <br>
+    <label for="number">Rate:</label>
+    <input type="number" id="number" name="rate" min="1" max="10" value="3">
+
+    <br>
+    <label for="search">Search:</label>
+    <input type="search" id="search" name="search">
+
+    <br><br>
+    <input type="submit">
+  </form>
+</body>
+</html>

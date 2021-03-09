@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Bootcamp - Table tag</title>
+
+  <style>
+    table, th, td {
+      border: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+  <h1>Table tag</h1>
+
+  <table style="width: 300px; border-collapse: collapse;">
+    <tr>
+      <th>Language</th>
+      <th>Release year</th>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>1972</td>
+    </tr>
+    <tr>
+      <td>JavaScript</td>
+      <td>1996</td>
+    </tr>
+  </table>
+
+  <h2>Col and row span</h2>
+  <table style="border-collapse: collapse; width: 300px;">
+    <tr>
+      <th>Name</th>
+      <th colspan="2">Contact</th>
+    </tr>
+    <tr>
+      <td>BRG</td>
+      <td>121212</td>
+      <td>8988999</td>
+    </tr>
+  </table>
+
+  <br>
+  <table style="border-collapse: collapse; width: 300px;">
+    <tr>
+      <th>Name</th>
+      <td>BRG</th>
+    </tr>
+    <tr>
+      <th rowspan="2">Contact</th>
+      <td>121212</td>
+    </tr>
+    <tr>
+      <td>89898999</td>
+    </tr>
+  </table>
+
+  <br>
+  <h2>Table caption</h2>
+    <table style="border-collapse: collapse; width: 300px;">
+    <caption>User details</caption>
+    <tr>
+      <th>Name</th>
+      <td>BRG</th>
+    </tr>
+    <tr>
+      <th rowspan="2">Contact</th>
+      <td>121212</td>
+    </tr>
+    <tr>
+      <td>89898999</td>
+    </tr>
+  </table>
+</body>
+</html>
